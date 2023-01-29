@@ -1,0 +1,18 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary-light;
+    padding: 8.2rem 0;
+    &__header{
+        font-family: 'Poiret One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 94px;
+        margin-right: 6rem;
+    }
+}
+.green{
+    color: $color-primary-dark;
+}
