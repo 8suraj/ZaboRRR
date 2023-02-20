@@ -6,5 +6,15 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-
+    background-color: $color-primary-light;
+    
+}
+a:link,a:visited,a:hover,a{
+    text-decoration: none;
+    cursor: pointer;
+}
+@font-face {
+    font-family: 'Inter', 'JetBrains Mono';
+    src: url('../../font/JetBrainsMono-Italic-VariableFont_wght.ttf') format("ttf"),
+    url('../../font/PoiretOne-Regular.ttf') format("ttf");
 }

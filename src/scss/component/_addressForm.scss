@@ -1,0 +1,81 @@
+.addressFormContainer{
+    background-color: $color-primary-light;
+    height: 75vh;
+    border: .1px solid transparent;
+}
+
+.addressForm{
+    margin: 32px auto;
+    display: flex;
+    border-radius: 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    // border:1px solid black;
+    flex-direction: column;
+    width: 30%;
+    &__header{
+        background-color: $color-primary-dark;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        border-radius: 7px 7px 0 0 ;
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        color: #FFFFFF;
+    }
+    &__body{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 50px;
+        div{
+            display: flex;
+            input{
+                &:not(:last-child){
+                    width: 40%;
+                    margin-right: 40px; 
+                }
+            }
+        }
+        input[type='text']{
+            border:none;
+            border-bottom:1px solid #000000 ;
+            background-color: transparent;
+            padding: 14px 5px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #737373;
+            margin: 12px 0;
+            &:focus{
+            
+            border-bottom:1px solid $color-primary-dark ;
+            }
+        }
+        input[type='submit']{
+            border: none;
+            background-color: #51AF5B;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            border-radius: 7px;
+            color: #FFFFFF;
+        }
+        input:active,input:focus{
+                border:none;
+                border-bottom:1px solid #51AF5B; ;
+            }
+        input[type='radio']{
+            border: 1px solid #000000;
+        }
+
+    }
+}

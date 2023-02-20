@@ -4,10 +4,14 @@ import fb from '../resource/fb.svg';
 import insta from '../resource/insta.svg';
 import twitter from '../resource/twitter.svg';
 import gp from '../resource/gp.svg';
-const Footer = ()=>{
+import {Link} from "react-router-dom";
+import logo from '../resource/logo.svg'
+const Footer = ({state})=>{
+    let cl;
+    if(state){cl='hidden'}
     return(
         <div className="footer">
-            <div className='footer__container__1'>
+            <div className={`footer__container__1 ${cl} `}>
                 {/* <img className="footer__img" src={footerImg} alt="" srcset="" /> */}
             </div>
             <div className="footer__container__2 ">
@@ -26,14 +30,14 @@ const Footer = ()=>{
                 <div className="footer__container__2-2">
                      <ul>
                         <li>Links</li>
-                        <li>Home</li>
-                        <li>Rate Chart</li>
-                        <li>Refund Policy</li>
-                        <li>About Us</li>
-                        <li>Contact</li>
-                        <li>Privacy Policy</li>
-                        <li>Sell Scrap</li>
-                        <li>Terms & Conditions</li>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/ratechart'>Rate Chart</Link></li>
+                        <li><Link to='/refundpolicy'>Refund Policy</Link></li>
+                        <li><Link to='/aboutus'>About Us</Link></li>
+                        {/* <li><Link to='/contact'>Contact</Link></li> */}
+                        <li><Link to='/policy'>Privacy Policy</Link></li>
+                        <li><Link to='/sellscrape'>Sell Scrap</Link></li>
+                        <li><Link to='/terms'>Terms & Conditions</Link></li>
                     </ul>
                 </div>
                 <div className="footer__container__2-3">
@@ -44,7 +48,7 @@ const Footer = ()=>{
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <div className='fourth'>
                         
-                        <div className='footer__container__2-4--logobox'>LOGO</div>
+                        <div className='footer__container__2-4--logobox'><Link to='/'><img src={logo} alt="" /></Link></div>
                         <div className='footer__container__2-4--social'>
                             <img src={fb} alt="" />
                             <img src={insta} alt="" />

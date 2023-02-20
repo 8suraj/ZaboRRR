@@ -1,0 +1,23 @@
+.article{
+
+    padding: 1rem 16rem;
+    &__header{
+        color:#51AF5B;
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 2px 10px ;
+    }
+    &__para{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        color: #000000;
+        padding: 2px 10px ;
+    }
+}

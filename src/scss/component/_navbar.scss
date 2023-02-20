@@ -1,44 +1,82 @@
 .nav {
-  height: 19vh;
+  // border : 1px solid black;
+  height: 15vh;
   background-color: $color-primary-light;
   justify-content: center;
   align-items: center;
   display: flex;
   &__bar{
 
+    // border : 1px solid black;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 70%;
-    height: 38%;
+    justify-content:space-between;
+    width: 80%;
+    height: 45%;
     &--logo-box {
-      
+      // border : 1px solid black;
       font-size: xx-large;
       height: 100%;
-      align-items: center;
+      text-align: center;
       font-weight: bold;
       color: $color-primary-dark;
-      margin-right: 31.6%;
+      margin-right: 0%;
       // position: absolute;
       // top: 50%;
       // left: 12%;
-      transform: translateY(10%);
+      // transform: translateY(10%);
     }
-    &--items{
 
-      &:not(:last-child){
-        margin-right: 45px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #737373;
-       
+    &--links-box{
+      // border : 1px solid red;
+      display : flex;
+      flex-direction: row;
+      align-items: center;
+      gap : 6rem;
+
+      &--items{
+        &:not(:last-child){
+          margin-right: 45px;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #737373;
+          // border : 1px solid black;
+        }
+
+        
       }
     }
+
+    
   }
 }
 // .logo{
 //   display: block;
 // }
+
+a:visited,a{
+  color: #737373;
+  font-size: 16px;
+}
+
+a:hover,a:active{
+  color :#51AF5B;
+}
+
+.user{
+  display: flex;
+  justify-content: center;
+  p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-primary-dark;
+        padding-left: 10px ;
+  }
+}

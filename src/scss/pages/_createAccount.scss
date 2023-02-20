@@ -1,0 +1,127 @@
+.createAccount{
+    // border : 1px solid green;
+    background-color: $color-primary-light;
+    // position: relative;
+    padding: 40px;
+    padding-bottom: 0;
+    // padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    &__userIcon{
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        padding: 0 auto;
+        position: absolute;
+        left : 70rem;
+        img{
+            z-index: 10;
+
+        }
+    }
+    &__body{
+        position: relative;
+        // border : 1px solid red;
+        z-index: 1;
+        // box-shadow: 9px 9px 9px 9px rgba(61, 59, 59, 0.1);
+        border-radius: 7px ;
+        // margin: 10px 200px;
+        // padding: 30px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin:4% 5%;
+        // transform: translateY(-90px);
+            &-1,&-2{
+                width: 40%;
+                // border: 1px solid black;
+            }
+
+        &-1{
+            // border : 1px solid red;
+            background: #51AF5B;
+            // background-color: red;
+            box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 7px 0px 0px 7px;
+            display: flex;
+            flex-direction: column;
+            height : 100%;
+            padding: 45px 0;
+            // z-index:-2;
+            // img{
+            //     width: 3%;
+            //     // position: absolute;
+            // }
+            input{
+                width: 70%;
+                background: #E8F0CB;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 50px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                // line-height: 19px;
+                border: none;
+                color: #737373;
+                padding: 15px 0;
+                padding-left: 50px;
+                margin: 20px 50px;
+                
+            }
+
+            .imgdiv{
+                position: relative;
+                // background: rgb(35, 151, 0);
+                img{
+                    position: absolute;
+                    left: 12%;
+                    top:35%;
+                    // border : 1px solid red;
+                }
+            }
+        }
+        &-2{
+            // border : 1px solid red;
+            background: #E8F0CB;
+            box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 7px 7px 0px;
+            padding: 15px 0;
+            padding: 105px 0;
+            // height : 60%;
+        }
+    }
+
+    .createAccount-btn{
+        // border : 1px solid red;
+        display : flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+// .imgdiv{
+//     position: relative;
+//     // background: rgb(35, 151, 0);
+//     img{
+//         position: absolute;
+//         // left: 12%;
+//         // top:25%;
+//         // bottom : 3rem;
+//         // border : 1px solid red;
+//     }
+// }
+.radio{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+    margin-top: 10px;
+    margin-right: 3rem;
+    align-items: center;
+    // border : 1px solid red;
+}
