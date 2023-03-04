@@ -8,7 +8,6 @@ import like from '../../resource/wrkProcess/like.svg'
 import money from '../../resource/wrkProcess/money.svg'
 import pick from '../../resource/wrkProcess/pick.svg'
 import weigh from '../../resource/wrkProcess/weigh.svg'
-import Api from '../../api/1';
 // import money from '../../resource/wrkProcess/money.svg'
 const list = [
   {
@@ -47,7 +46,7 @@ const Home = () => {
       
     </div>
     <Footer state={true}/>
-    <Api/>
+
     </>
   )
 }
