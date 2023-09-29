@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@100;400;500;700&family=Poiret+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 body {
 	@apply bg-color-tertiary text-gray font-Inter;
 }
 
 .float {
-	&:hover {
-		animation: floatanim 2s ease-out infinite;
-	}
+	animation: floatanim 2s ease-out infinite;
 }
 @keyframes floatanim {
 	0% {
@@ -28,10 +27,8 @@ body {
 		transform: translate(0px);
 	}
 }
-.press {
-	&:active {
-		animation: pressanim 0.8s ease 1;
-	}
+.press:active {
+	animation: pressanim 0.8s ease 1;
 }
 
 @keyframes pressanim {
@@ -61,4 +58,15 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
 	background-color: #51af5b;
 	outline: 1px solid #b3e55e;
+}
+.container1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	gap: 4em 2em;
+	grid-template-areas: '. . . . .';
+}
+
+.b :not(:first-child, :last-child) {
+	@apply border-b border-[#C9C9C9];
 }

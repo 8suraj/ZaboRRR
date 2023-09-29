@@ -32,7 +32,7 @@ export default function Navbar() {
 											: 'hover:text-color-primary'
 									}`
 								}
-								to='/'>
+								to='/ratechart'>
 								Rate Chart
 							</NavLink>
 							<NavLink
@@ -57,7 +57,7 @@ export default function Navbar() {
 								to='/'>
 								Contact
 							</NavLink>
-							<NavLink to='/'>
+							<NavLink to='/sellscrap'>
 								<button className='border-2 border-color-primary  p-2 text-color-primary rounded-full font-bold text-[.8rem] shadow-xl press'>
 									Sell Scrap
 								</button>
@@ -114,14 +114,56 @@ export default function Navbar() {
 					</div>
 				</div>
 				{menuActive && (
-					<div className='lg:hidden absolute left-0 right-0 top-0 bottom-0 w-[100vw] h-[100vh] flex items-center justify-center bg-color-tertiary '>
+					<div className='lg:hidden absolute left-0 right-0 top-0 bottom-0 w-[100vw] h-[100vh] flex items-center justify-center bg-color-tertiary text-black '>
 						<ul className='list-none flex flex-col gap-8  w-9/12 items-center cursor-pointer'>
-							<li>Home</li>
-							<li>Rate Chart</li>
-							<li>About Us</li>
-							<li>Contact</li>
-							<li>Sell Scrap</li>
-							<li>Profile</li>
+							<NavLink
+								to='/'
+								className={({ isActive }) =>
+									`${isActive ? 'text-color-primary' : ''}`
+								}
+								onClick={() => setMenuActive(false)}>
+								Home
+							</NavLink>
+							<NavLink
+								to='/ratechart'
+								className={({ isActive }) =>
+									`${isActive ? 'text-color-primary' : ''}`
+								}
+								onClick={() => setMenuActive(false)}>
+								Rate Chart
+							</NavLink>
+							<NavLink
+								to='/about'
+								className={({ isActive }) =>
+									`${isActive ? 'text-color-primary' : ''}`
+								}
+								onClick={() => setMenuActive(false)}>
+								About Us
+							</NavLink>
+							<NavLink
+								to='/contact'
+								className={({ isActive }) =>
+									`${isActive ? 'text-color-primary' : ''}`
+								}
+								onClick={() => setMenuActive(false)}>
+								Contact
+							</NavLink>
+							<NavLink
+								to='/sellscrap'
+								className={({ isActive }) =>
+									`${isActive ? 'text-color-primary' : ''}`
+								}
+								onClick={() => setMenuActive(false)}>
+								Sell Scrap
+							</NavLink>
+							<NavLink
+								to='/profile'
+								className={({ isActive }) =>
+									`${isActive ? 'text-color-primary' : ''}`
+								}
+								onClick={() => setMenuActive(false)}>
+								Profile
+							</NavLink>
 						</ul>
 					</div>
 				)}

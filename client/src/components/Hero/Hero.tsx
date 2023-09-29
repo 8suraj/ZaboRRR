@@ -34,7 +34,7 @@ const data = [
 ];
 export function Hero1() {
 	return (
-		<div className='w-full flex flex-col items-center'>
+		<section className='w-full flex flex-col items-center p-4'>
 			<div className='m-auto flex py-4  justify-center gap-4 px-3  items-center'>
 				<div className='font-Poiret text-black font-normal lg:text-[4rem] md:text-[2.6rem] text-[1.7rem] leading-normal  '>
 					Let us{' '}
@@ -59,17 +59,17 @@ export function Hero1() {
 					SELL SCRAP
 				</button>
 			</div>
-		</div>
+		</section>
 	);
 }
 
 export function Hero2() {
 	return (
-		<div className='w-full flex flex-col  items-center text-black gap-24 z-10'>
+		<section className='w-full flex flex-col  items-center text-black gap-24 z-10 py-5  font-Jetbrains'>
 			<h1 className='  text-[1.5rem]  lg:text-[2rem]'>
 				OUR WORK PROCESS
 			</h1>
-			<div className='flex lg:w-11/12 w-full  items-center justify-center  gap-14 flex-wrap '>
+			<div className='flex lg:w-11/12 w-full   justify-center  2xl:gap-14 xl:gap-10 gap-16 flex-wrap '>
 				{data.map((e) => (
 					<HeroCard
 						text={e.text}
@@ -78,7 +78,7 @@ export function Hero2() {
 					/>
 				))}
 			</div>
-		</div>
+		</section>
 	);
 }
 
@@ -96,10 +96,10 @@ function HeroCard({
 			<div className='absolute left-2/4  heroAbs'>
 				<img src={img} alt='' />
 			</div>
-			<h1 className='text-center mt-12 font-bold'>
+			<h1 className='text-center mt-12 font-bold '>
 				{header}
 			</h1>
-			<div className=' text-justify p-5 lg:p-8  md:p-5  '>
+			<div className=' text-justify p-5 lg:p-7  md:p-5  '>
 				{text}
 			</div>
 		</div>
