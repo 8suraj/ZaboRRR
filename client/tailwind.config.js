@@ -5,13 +5,15 @@ export default {
 		fontFamily: {
 			Roboto: ['Roboto', 'sans-serif'],
 			Poppins: ['Poppins', 'sans-serif'],
-			Poiret: ['Poiret One', 'cursive'],
+			Poiret: ['Poiret One'],
 			Inter: ['Inter', 'sans-serif'],
+			Jetbrains: ['JetBrains Mono'],
 		},
 		colors: {
 			'color-primary': '#51AF5B',
 			'primary-light': '#B3E55E',
 			'color-tertiary': '#E8F0CB',
+			transparent: 'transparent',
 			gray: '#737373',
 			black: '#000',
 			white: '#FFF',
