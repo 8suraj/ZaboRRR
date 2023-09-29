@@ -1,4 +1,4 @@
-import Card from '../../components/Card/Card';
+import { Card } from '../../components/Card/Card';
 import ds from './1.svg';
 export default function SellScrap() {
 	return (
