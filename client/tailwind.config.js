@@ -5,8 +5,9 @@ export default {
 		fontFamily: {
 			Roboto: ['Roboto', 'sans-serif'],
 			Poppins: ['Poppins', 'sans-serif'],
-			Poiret: ['Poiret One', 'cursive'],
+			Poiret: ['Poiret One'],
 			Inter: ['Inter', 'sans-serif'],
+			Jetbrains: ['JetBrains Mono', 'monospace'],
 		},
 		colors: {
 			'color-primary': '#51AF5B',
