@@ -1,0 +1,16 @@
+{
+	"name": "zaborrr",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"install-server": "npm install --prefix server",
+		"install-client": "npm install --prefix client",
+		"install": "npm run install-server && npm run install-client",
+		"client": "npm run dev --prefix client",
+		"server": "npm run watch --prefix server",
+		"deploy": "npm run build --prefix client && npm start --prefix server"
+	},
+	"keywords": [],
+	"author": "Suraj Roy",
+	"license": "ISC"
+}
