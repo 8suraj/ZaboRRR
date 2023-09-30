@@ -12,12 +12,16 @@ import RateChart from './Routes/RateChart/RateChart.tsx';
 import TermsnConditions from './Routes/Terms/Terms.tsx';
 import Privacypolicy from './Routes/PrivacyPolicy/PrivacyPolicy.tsx';
 import Profile from './Routes/Profile/Profile.tsx';
+import Login from './Routes/Login/Login.tsx';
+import Register from './Routes/Register/Register.tsx';
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<Navbar />}>
 					<Route index element={<Home />} />
+					<Route path='register' element={<Register />} />
+					<Route path='login' element={<Login />} />
 					<Route path='about' element={<About />} />
 					<Route path='sellscrap' element={<SellScrap />} />
 					<Route path='ratechart' element={<RateChart />} />
