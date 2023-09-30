@@ -47,7 +47,7 @@ export default function Footer() {
 							Home
 						</NavLink>
 						<NavLink
-							to='/'
+							to='/ratechart'
 							className={({ isActive }) =>
 								`${
 									isActive
@@ -58,7 +58,7 @@ export default function Footer() {
 							Rate Chart
 						</NavLink>
 						<NavLink
-							to='/'
+							to='/refundpolicy'
 							className={({ isActive }) =>
 								`${
 									isActive
@@ -80,7 +80,7 @@ export default function Footer() {
 							About Us
 						</NavLink>
 						<NavLink
-							to='/'
+							to='/contact'
 							className={({ isActive }) =>
 								`${
 									isActive
@@ -91,7 +91,7 @@ export default function Footer() {
 							Contact
 						</NavLink>
 						<NavLink
-							to='/'
+							to='/privacypolicy'
 							className={({ isActive }) =>
 								`${
 									isActive
@@ -102,7 +102,7 @@ export default function Footer() {
 							Privacy Policy
 						</NavLink>
 						<NavLink
-							to='/'
+							to='/sellscrap'
 							className={({ isActive }) =>
 								`${
 									isActive
