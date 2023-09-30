@@ -4,6 +4,7 @@ import like from '../../assets/svg/hero/like.svg';
 import truck from '../../assets/svg/hero/truck.svg';
 import weight from '../../assets/svg/hero/weight.svg';
 import money from '../../assets/svg/hero/money.svg';
+import { Link } from 'react-router-dom';
 
 const data = [
 	{
@@ -55,9 +56,11 @@ export function Hero1() {
 				</div>
 			</div>
 			<div>
-				<button className='border-2 border-color-primary  p-2 text-color-primary rounded-full font-bold text-[.8rem] shadow-xl press'>
+				<Link
+					to='/sellscrap'
+					className='border-2 border-color-primary  p-2 text-color-primary rounded-full font-bold text-[.8rem] shadow-xl press'>
 					SELL SCRAP
-				</button>
+				</Link>
 			</div>
 		</section>
 	);

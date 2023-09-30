@@ -62,7 +62,7 @@ export default function Navbar() {
 									Sell Scrap
 								</button>
 							</NavLink>
-							<NavLink className='' to='/'>
+							<NavLink className='' to='/profile'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									fill='none'
@@ -115,7 +115,7 @@ export default function Navbar() {
 				</div>
 				{menuActive && (
 					<div className='lg:hidden absolute left-0 right-0 top-0 bottom-0 w-[100vw] h-[100vh] flex items-center justify-center bg-color-tertiary text-black '>
-						<ul className='list-none flex flex-col gap-8  w-9/12 items-center cursor-pointer'>
+						<div className='list-none flex flex-col gap-8  w-9/12 items-center cursor-pointer'>
 							<NavLink
 								to='/'
 								className={({ isActive }) =>
@@ -164,7 +164,7 @@ export default function Navbar() {
 								onClick={() => setMenuActive(false)}>
 								Profile
 							</NavLink>
-						</ul>
+						</div>
 					</div>
 				)}
 			</nav>

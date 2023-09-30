@@ -2,15 +2,15 @@ import { BsFacebook, BsGooglePlay } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaXTwitter } from 'react-icons/fa6';
 import logo from '../../assets/logo/logo.svg';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 export default function Footer() {
 	return (
 		<footer className='border-t border-primary-light'>
 			<div className='flex  justify-around gap-10 p-8 flex-col lg:flex-row  items-center lg:items-start'>
 				<div className=' flex flex-col items-center '>
-					<div className=''>
+					<Link className='' to='/'>
 						<img src={logo} alt='' />
-					</div>
+					</Link>
 					<div className='flex h-10  gap-4 justify-center items-center p-3'>
 						<BsFacebook size={30} color={'#51AF5B'} />
 						<AiFillInstagram size={30} color={'#51AF5B'} />
@@ -66,7 +66,7 @@ export default function Footer() {
 										: 'hover:text-color-primary'
 								}`
 							}>
-							Refund PoNavLinkcy
+							Refund Policy
 						</NavLink>
 						<NavLink
 							to='/about'
@@ -99,7 +99,7 @@ export default function Footer() {
 										: 'hover:text-color-primary'
 								}`
 							}>
-							Privacy PoNavLinkcy
+							Privacy Policy
 						</NavLink>
 						<NavLink
 							to='/'
@@ -113,7 +113,7 @@ export default function Footer() {
 							Sell Scrap
 						</NavLink>
 						<NavLink
-							to='/'
+							to='/tnc'
 							className={({ isActive }) =>
 								`${
 									isActive
