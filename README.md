@@ -1,6 +1,8 @@
 # Zaborrr: Turning Trash into Treasure
-**Backend is under devlopment**
+
 **Zaborrr** is a full-stack project with a mission to address environmental concerns by giving new life to waste. The name "Zaborrr" is derived from the Assamese word "জাবৰ" (pronounced "zabor"), meaning garbage. The extra "rrr" in the name signifies the three Rs of waste management: **Recycle, Reuse, and Reduce**.
+
+**Backend is under devlopment**
 
 This project leverages modern technology and innovation to transform what many consider trash into valuable resources.
 
@@ -26,6 +28,6 @@ This project leverages modern technology and innovation to transform what many c
 
 Zaborrr is an open-source project, and we encourage collaboration from developers and eco-enthusiasts alike. Feel free to contribute, report issues, or suggest enhancements by visiting our [GitHub repository](https://github.com/8suraj/ZaboRRR).
 
-Learn more and experience the three Rs of waste management in action at our website: [Zaborrr.com](https://zaborrr.vercel.app).
+Learn more and experience the three Rs of waste management in action at our website: [zaborrr.vercel.app](https://zaborrr.vercel.app).
 
 Let's work together to turn garbage into a valuable resource, embracing the three Rs: **Recycle, Reuse, and Reduce**, one "Zabor" at a time!
