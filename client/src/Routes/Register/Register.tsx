@@ -1,8 +1,5 @@
 import { Formik, Form } from 'formik';
-import {
-	Input2,
-	Input1,
-} from '../../components/Input/Input';
+import { Input2 } from '../../components/Input/Input';
 
 export default function Register() {
 	return (
