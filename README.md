@@ -1,3 +1,5 @@
+**This was my college project i am currently revamping the project**
+
 # Zaborrr: Turning Trash into Treasure
 
 **Zaborrr** is a full-stack project with a mission to address environmental concerns by giving new life to waste. The name "Zaborrr" is derived from the Assamese word "জাবৰ" (pronounced "zabor"), meaning garbage. The extra "rrr" in the name signifies the three Rs of waste management: **Recycle, Reuse, and Reduce**.
